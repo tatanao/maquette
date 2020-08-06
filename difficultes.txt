@@ -1,0 +1,4 @@
+difficultés rencontrées:
+1. Allignement du bloc contact et menu au niveau de l'entête
+2. au niveau du footer, la disposition est une ligne , 4 colonnes mais je ne sais pas pourquoi ça considère juste 3
+merci.

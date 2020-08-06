@@ -1,0 +1,247 @@
+/*   
+	auteur : Naomie
+	version : 1.1
+	Date: 30/07/2020
+	Description : fichier html réalisant la maquette relative au tp
+*/
+
+/* grille principale (le body)*/
+
+body{
+	display: grid;
+	grid-template-columns: repeat(4,1fr [col-start]);
+	grid-template-rows: repeat(4,auto [col-start]);
+    width: 100%;
+}
+
+/* elements de la grille principale */
+
+/* header */
+
+header{
+	grid-column: 1/-1;
+	grid-row: 1;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: repeat(1,auto [col-start]);
+}
+
+header .logo{
+	grid-column: 1/2;
+	grid-row: 1;
+	padding-top: 2%;
+}
+
+header .header-colonne{
+	grid-column: 2/3;
+	grid-row: 1;
+	display: grid;
+	grid-template-rows: repeat(2,auto); 
+	padding-top: 2%;
+}
+
+.logo img{
+	height: 25%;
+	width: 15%;
+}
+
+.header-colonne2 .contact{
+	grid-column: 1/-1;
+	grid-row: 1;
+	margin-left: 65%;
+	
+}
+
+.header-colonne2 .contact i{
+	padding-right: 4%;
+	font-size: 180%;
+	color: blue;
+}
+
+.header-colonne2 .menu{
+	grid-column: 1/-1;
+	grid-row: 2;
+	margin-left: 30%;
+}
+
+ .header-colonne2 .menu ul{
+	list-style-type: none;
+}
+.menu ul li a{
+	color:black;
+	text-decoration:none;
+	text-align:center;
+	font-weight: bold;
+	font-size: 14px;
+	font-family: "Open Sans Source";
+}
+.menu li{
+	display: inline-block;
+	padding-right: 4%;
+}
+
+/* baniere */
+
+.banniere{
+	grid-column: 1/-1;
+	grid-row: 2;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr ;
+	grid-template-rows: repeat(2,auto [col-start]);
+	background-image: url("images/fond.png");
+	background-size: cover;
+	padding-top: 4%;
+}
+
+.banniere .a-propos{
+	grid-column: 1/2;
+	grid-row: 2;
+	margin-left: 5%;
+	padding-top: 22%;
+}
+
+.a-propos .title h3{
+	color: #db8054;
+	font-weight: bold;
+	font-family: "Open Sans Source";
+
+}
+
+.a-propos .Description{
+	text-align: justify;
+	line-height: 1,;
+	font-family: "Open Sans Source";
+	font-size:15px;
+}
+
+.a-propos .read{
+	background-color: #fcfcfe;
+	color: black;
+	padding : 2% 1% 2% 1%;
+	text-align: center;
+	font-weight: bold;
+	margin-right: 70%;
+
+}
+
+.banniere .image{
+	grid-column: 3;
+	grid-row: 1;
+}
+
+.banniere .Partenaire{
+	grid-column: 3;
+	grid-row: 2;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding-top: 55%;
+}
+
+.Partenaire .oracle{
+	grid-column: 1;
+	grid-row: 1;
+	background-color: red;
+	color: white;
+	padding : 8% 4% 8% 4%;
+	text-align: center;
+	margin-left: 60%;
+	margin-right: 2%;
+}
+
+.Partenaire .gold{
+	grid-column: 2;
+	font-weight: bold;
+	font-family: "Open Sans Source";
+	font-size: 12px;
+	padding-top: 4%;
+}
+
+/* articles */
+
+
+.services{
+	grid-column: 1/-1;
+	grid-row: 3;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr ;
+	grid-template-rows: repeat(3,auto [col-start]);
+	margin-left: 2%;
+}
+
+.services .service-title{
+	grid-column: 1;
+	grid-row: 1;
+	color: #65749b;
+}
+
+.services .article a{
+	text-decoration: none;
+	color: #65749b;
+
+}
+
+.article p{
+	padding-right: 2%;
+}
+
+.services .bouton a{
+	text-decoration: none;
+	color: #f1f2f7;
+}
+
+.services .bouton{
+	grid-column: 2;
+	grid-row: 3;
+	background-color: #fcfcfe;
+	padding : 2% 0.5% 2% 0.5%;
+	font-weight: bold;
+	margin-right: 80%;
+	margin-bottom: 10%;
+	text-align: center;
+	background: #7dafe2;
+}
+
+.services .articles{
+	grid-column: 1/-1;
+	grid-row: 2;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+ 	grid-template-rows: minmax(25%, auto);
+
+}
+
+.articles .article{
+	font-family: "Open Sans Source";
+	padding: 1.5%;
+	font-size: 16px;
+}
+
+ img.image{
+	height: 46px;
+	width: 63px;
+}
+
+/* footer */
+
+footer{
+	grid-column: 1/-1;
+	grid-row: 4;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+
+	padding-top: 2%;
+	padding-left: 3%;
+
+	background-image: linear-gradient(to top,rgba(255,255,255,0)60%,rgba(241,242,247,0.5));
+}
+
+.element{
+	font-family: "Open Sans Source";
+	font-weight: bold;
+	font-size: 16px;
+	padding: 3%;
+}
+
+.element .title{
+	padding-bottom: 6%;
+}
